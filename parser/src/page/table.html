@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Résultat</title>
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body>
+
+        <div class>
+
+            <!-- <h1>Résultat</h1> -->
+            <div class="container-button">
+                <input id="title" type="text" min="1"
+                    placeholder="     title" />
+                <button onclick=" telechargerPDF() ">Download pdf</button>
+                <!-- <button onclick="window.print()">Imprimer</button> -->
+            </div>
+
+        </div>
+
+        <div class="container-result">
+
+            <div class="table-container" id="print-zone">
+                <h3 id="titre"></h3>
+                <table id="resultTable"></table>
+            </div>
+
+            <br>
+
+            <button onclick="window.location.href='../../index.html' "
+                class="otherconvert">
+                Convertir un autre élément
+            </button>
+
+        </div>
+        <script src="../js/resultat.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
+        <script src="../js/downloard.js"></script>
+    </body>
+</html>
